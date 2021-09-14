@@ -8,11 +8,14 @@ body {
   margin:0px;
 font-family: 'Montserrat', sans-serif;
   text-align:center;
-  background-color: white;
+  color:white;
+}
+p{
+
+  color:white;
 }
 
 #container {
-  color:#545454;
   text-transform: uppercase;
   font-size:36px;
   font-weight:bold;
@@ -22,6 +25,8 @@ font-family: 'Montserrat', sans-serif;
   bottom:40%;
   display:block;
   font-weight: 400;
+   z-index: 1;
+
 }
 
 #flip {
@@ -32,7 +37,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
 #flip > div {
-  color:#4b499e;
+  color:white;
   padding:4px 24px;
   height:45px;
   margin-bottom:45px;
@@ -40,7 +45,24 @@ font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 
 }
+.video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 0;
+  visibility: hidden;
+}
+@media only screen and (max-width: 768px) {
+.video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 0;
+}
 
+}
 
 
 
@@ -58,19 +80,21 @@ p {
         <!-- head definitions go here -->
     </head>
     <body>
-
+<video autoplay muted loop id="video">
+        <source src="BGMove.mp4" type="video/mp4" />
+    </video>
         <div id=container>
           <img src="Logo.png" style="height: 150px">
           <br><br>
   ТА 
   <div id=flip>
-    <div> 47  &nbsp | &nbsp 48</div> -Р
+    <div> 47, 48</div>-Р
   </div>
 АСРААС БЭЛГЭЭ <br>
 ОЧИЖ АВААРАЙ !
 </div>
 
+<p>SONO зээлийн аппликейшн</p>
     </body>
 
-<p>SONO зээлийн аппликейшн</p>
 </html>
