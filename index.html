@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 body {
   margin:0px;
-  font-family:'Roboto';
+font-family: 'Montserrat', sans-serif;
   text-align:center;
 }
 
@@ -17,47 +17,30 @@ body {
   padding-top:200px;  
   position:fixed;
   width:100%;
-  bottom:45%;
+  bottom:40%;
   display:block;
 }
 
 #flip {
   height:50px;
+  margin: 5px;
   overflow:hidden;
 }
 
-#flip > div > div {
+#flip > div {
   color:#fff;
-  padding:4px 12px;
+  padding:4px 24px;
   height:45px;
   margin-bottom:45px;
   display:inline-block;
 }
 
-#flip div:first-child {
-  animation: show 6s linear infinite;
-}
 
-#flip div div {
-  background:#4b499e;
-}
-#flip div:first-child div {
-  background:#4b499e;
-}
-#flip div:last-child div {
+#flip div {
   background:#4b499e;
 }
 
-@keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-}
+
 
 p {
   position:fixed;
@@ -74,22 +57,17 @@ p {
     <body>
 
         <div id=container>
+          <img src="Logo.png" style="height: 150px">
+          <br><br>
   ТА 
   <div id=flip>
-    <div><div>47-Р</div></div>
-    <div><div>48-Р</div></div>
-    <div><div>47-Р</div></div>
-    <div><div>48-Р</div></div>
-    <div><div>47-Р</div></div>
-    <div><div>48-Р</div></div>
-    <div><div>47-Р</div></div>
-    <div><div>48-Р</div></div>
-    <div><div>47-Р</div></div>
+    <div> 47  &nbsp | &nbsp 48</div> -Р
   </div>
 АСРААС БЭЛГЭЭ <br>
 ОЧИЖ АВААРАЙ !
 </div>
 
-<p>SONO зээлийн аппликейшн</p>
     </body>
+
+<p>SONO зээлийн аппликейшн</p>
 </html>
